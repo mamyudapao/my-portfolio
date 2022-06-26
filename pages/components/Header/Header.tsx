@@ -1,23 +1,25 @@
-import React, { Dispatch, SetStateAction } from "react";
+import React from "react";
 import { Tabs, TabList, Tab, Heading, Link } from "@chakra-ui/react";
 import NextLink from "next/link";
+import { useRouter } from "next/router";
 import Styles from "./Header.module.scss";
-import { Pages } from "../../types/types";
 
-const Header = (props: Props) => {
+const Header = () => {
+  const router = useRouter();
+
   return (
     <div className={Styles.header}>
       <NextLink href="/">
         <Link>
-          <Heading>{`nosiken's portfolio`}</Heading>
+          <Heading>{`nosiken`}</Heading>
         </Link>
       </NextLink>
       <Tabs variant="soft-rounded" colorScheme="green">
         <TabList className={Styles.tabList}>
-          <Tab>Profile</Tab>
-          <Tab>Works</Tab>
-          <Tab>Activity</Tab>
-          <Tab>Contact</Tab>
+          <Tab onClick={() => router.push("profile")}>Profile</Tab>
+          <Tab onClick={() => router.push("works")}>Works</Tab>
+          <Tab onClick={() => router.push("activity")}>Activity</Tab>
+          <Tab onClick={() => router.push("contact")}>Contact</Tab>
         </TabList>
       </Tabs>
     </div>
