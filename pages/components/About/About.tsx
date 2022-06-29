@@ -2,7 +2,7 @@ import React from "react";
 import Styles from "./About.module.scss";
 
 import Image from "next/image";
-import NosikenImage from "../../../public/IMG_4784.JPG";
+import NosikenImage from "../../../public/nosiken.jpg";
 import Github from "../../../public/github.png";
 import Twitter from "../../../public/twitter.png";
 import Instagram from "../../../public/instagram.png";
