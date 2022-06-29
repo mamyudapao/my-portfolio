@@ -3,6 +3,7 @@ import type { AppProps } from "next/app";
 import { ChakraProvider, Center, VStack } from "@chakra-ui/react";
 import Header from "./components/Header/Header";
 import About from "./components/About/About";
+import Works from "./components/Works/Works";
 import Head from "next/head";
 
 function MyApp({ Component, pageProps }: AppProps) {
@@ -17,6 +18,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <ChakraProvider>
         <Header></Header>
         <About></About>
+        <Works></Works>
         <Component {...pageProps} />
       </ChakraProvider>
     </>

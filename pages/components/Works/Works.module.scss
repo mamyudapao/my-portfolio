@@ -1,0 +1,35 @@
+.worksWrapper {
+    height: 120vh;
+    background-color: #FBDA68;
+    text-align: center;
+    .title {
+        padding-top: 20px;
+        font-size: 48px;
+        font-weight: bold;
+        color: #525252;
+        margin-top: 2rem;
+    }
+}
+
+.swiper {
+    margin-top: 2%;
+    height: 65%;
+    width: 60%;
+}
+
+.swiperTitle {
+    font-size: 48px;
+    font-weight: bold;
+    color: #525252;
+}
+
+.swiperDiscription {
+    font-size: 24px;
+    font-weight: bold;
+    color: #525252;
+}
+
+.swiperTech {
+    font-size: 24px;
+    font-weight: bold;
+}
