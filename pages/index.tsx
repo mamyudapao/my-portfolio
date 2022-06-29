@@ -1,12 +1,7 @@
 import type { NextPage } from "next";
-import Profile from "./profile";
 
 const Home: NextPage = () => {
-  return (
-    <>
-      <Profile></Profile>
-    </>
-  );
+  return <></>;
 };
 
 export default Home;

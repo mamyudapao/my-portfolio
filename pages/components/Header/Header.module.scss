@@ -1,11 +1,19 @@
-.header {
+.headerWrapper {
     display: flex;
-    padding: 0.5rem 1rem;
-    border-bottom: 1px solid #e6e6e6;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    margin: 0 30px;
 }
 
-.tabList {
-    * {
-        margin: 0 5em;
+.centerNav {
+    display: flex;
+    list-style: none;
+    font-size: 1.8em;
+    li {
+        margin: 0 1.5em;
+        color: #979797;
+        font-size: 1.2em;
+        font-weight: bold;
     }
 }
