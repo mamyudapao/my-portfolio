@@ -1,27 +1,35 @@
 import React from "react";
-import { Tabs, TabList, Tab, Heading, Link } from "@chakra-ui/react";
-import NextLink from "next/link";
+import logo from "../../../public/logo3.png";
 import { useRouter } from "next/router";
+import { Button } from "@chakra-ui/react";
 import Styles from "./Header.module.scss";
+import Image from "next/image";
+import Link from "next/link";
 
 const Header = () => {
   const router = useRouter();
 
   return (
-    <div className={Styles.header}>
-      <NextLink href="/">
-        <Link>
-          <Heading>{`nosiken`}</Heading>
-        </Link>
-      </NextLink>
-      <Tabs variant="soft-rounded" colorScheme="green">
-        <TabList className={Styles.tabList}>
-          <Tab onClick={() => router.push("profile")}>Profile</Tab>
-          <Tab onClick={() => router.push("works")}>Works</Tab>
-          <Tab onClick={() => router.push("activity")}>Activity</Tab>
-          <Tab onClick={() => router.push("contact")}>Contact</Tab>
-        </TabList>
-      </Tabs>
+    <div className={Styles.headerWrapper}>
+      <div>
+        <Image src={logo} width={100} height={100} alt="logo"></Image>
+      </div>
+      <div>
+        <ul className={Styles.centerNav}>
+          <li>
+            <Link href="#about">About</Link>
+          </li>
+          <li>
+            <Link href="#">Works</Link>
+          </li>
+          <li>
+            <Link href="#">Tech</Link>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <Button colorScheme="green">Contact</Button>
+      </div>
     </div>
   );
 };

@@ -1,2 +1,2 @@
-export const header: string;
-export const tabList: string;
+export const centerNav: string;
+export const headerWrapper: string;
