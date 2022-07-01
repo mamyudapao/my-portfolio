@@ -43,17 +43,11 @@ const ReactSlickDemo = () => {
         modules={[Pagination]}
         className={Styles.swiper}
       >
-        {images.map((image, index) => {
-          return (
-            <SwiperSlide key={index}>
-              <Image
-                src={image.src}
-                alt={image.name}
-                layout="responsive"
-              ></Image>
-            </SwiperSlide>
-          );
-        })}
+        {images.map((image, index) => (
+          <SwiperSlide key={index}>
+            <Image src={image.src} alt={image.name} layout="responsive"></Image>
+          </SwiperSlide>
+        ))}
       </Swiper>
       <h3 className={Styles.swiperDiscription}>
         {images[activeIndex].description}
@@ -64,13 +58,11 @@ const ReactSlickDemo = () => {
   );
 };
 
-const Works = () => {
-  return (
-    <div className={Styles.worksWrapper}>
-      <h2 className={Styles.title}>Woks</h2>
-      <ReactSlickDemo />
-    </div>
-  );
-};
+const Works = () => (
+  <div className={Styles.worksWrapper}>
+    <h2 className={Styles.title}>Woks</h2>
+    <ReactSlickDemo />
+  </div>
+);
 
 export default Works;

@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 module.exports = {
     env: {
         browser: true,
@@ -6,7 +7,7 @@ module.exports = {
     extends: [
         "eslint:recommended",
         "plugin:react/recommended",
-        "google",
+        "airbnb-base",
         "plugin:@typescript-eslint/recommended",
         "prettier",
     ],
@@ -23,5 +24,7 @@ module.exports = {
         "require-jsdoc": "off",
         "react/react-in-jsx-scope": "off",
         "no-console": "error",
+        "import/no-unresolved": "off",
+        "import/extensions": "off",
     },
 };
