@@ -4,6 +4,7 @@ const Home: NextPage = () => {
   console.log("aaaa");
   console.log("aaaa");
   console.log("aaaa");
+  console.log("aaaa");
   return <></>;
 };
 
