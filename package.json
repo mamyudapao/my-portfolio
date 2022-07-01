@@ -6,6 +6,7 @@
         "dev": "next dev & typed-scss-modules -w true pages ",
         "build": "next build",
         "start": "next start",
+        "prepare": "husky install",
         "lint-fix": "eslint --cache --fix ./**/*.{ts,tsx} && prettier --write ./**/*.{ts,tsx}"
     },
     "dependencies": {
