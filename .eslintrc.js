@@ -22,5 +22,6 @@ module.exports = {
     rules: {
         "require-jsdoc": "off",
         "react/react-in-jsx-scope": "off",
+        "no-console": "error",
     },
 };
