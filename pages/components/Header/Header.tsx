@@ -1,14 +1,11 @@
 import React from "react";
 import logo from "../../../public/logo3.png";
-import { useRouter } from "next/router";
 import { Button } from "@chakra-ui/react";
 import Styles from "./Header.module.scss";
 import Image from "next/image";
 import Link from "next/link";
 
 const Header = () => {
-  const router = useRouter();
-
   return (
     <div className={Styles.headerWrapper}>
       <div>
