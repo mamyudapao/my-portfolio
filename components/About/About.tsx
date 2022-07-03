@@ -3,10 +3,10 @@ import Image from "next/image";
 import Link from "next/link";
 import Styles from "./About.module.scss";
 
-import NosikenImage from "../../../public/nosiken.jpg";
-import Github from "../../../public/github.png";
-import Twitter from "../../../public/twitter.png";
-import Instagram from "../../../public/instagram.png";
+import NosikenImage from "../../public/nosiken.jpg";
+import Github from "../../public/github.png";
+import Twitter from "../../public/twitter.png";
+import Instagram from "../../public/instagram.png";
 
 const About = () => (
   <div className={Styles.aboutWrapper} id="about">

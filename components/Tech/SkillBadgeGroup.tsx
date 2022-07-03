@@ -1,30 +1,14 @@
 import React from "react";
 import SkillBadge from "./SkillBadge";
 import Styles from "./Tech.module.scss";
-import { Skill } from "../../../types/tech";
+
+type Skill = {
+  name: string;
+  group: "front" | "back" | "other";
+};
 
 type Props = {
   skills: Skill[];
-};
-
-const allocateSkills = (skills: Skill[]) => {
-  const topSkills: Skill[] = [];
-  const centerSkills: Skill[] = [];
-  const bottomSkills: Skill[] = [];
-  skills.forEach((skill, index) => {
-    if (index % 3 === 0) {
-      topSkills.push(skill);
-    } else if (index % 3 === 1) {
-      centerSkills.push(skill);
-    } else if (index % 3 === 2) {
-      bottomSkills.push(skill);
-    }
-  });
-  return {
-    topSkills,
-    centerSkills,
-    bottomSkills,
-  };
 };
 
 const TopSkillsBadgeGroup = (props: Props) => {
@@ -56,6 +40,25 @@ const BottomSkillsBadgeGroup = (props: Props) => {
 };
 
 const SkillBadgeGroup = (props: Props) => {
+  const allocateSkills = (skills: Skill[]) => {
+    const topSkills: Skill[] = [];
+    const centerSkills: Skill[] = [];
+    const bottomSkills: Skill[] = [];
+    skills.forEach((skill, index) => {
+      if (index % 3 === 0) {
+        topSkills.push(skill);
+      } else if (index % 3 === 1) {
+        centerSkills.push(skill);
+      } else if (index % 3 === 2) {
+        bottomSkills.push(skill);
+      }
+    });
+    return {
+      topSkills,
+      centerSkills,
+      bottomSkills,
+    };
+  };
   const { topSkills, centerSkills, bottomSkills } = allocateSkills(
     props.skills
   );

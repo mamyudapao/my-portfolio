@@ -8,9 +8,9 @@ import Styles from "./Works.module.scss";
 
 import "swiper/css";
 import "swiper/css/pagination";
-import CyclingRouter from "../../../public/7JKD2fV.png";
-import IdealShere from "../../../public/idealshere.webp";
-import Nuxtchat from "../../../public/nuxtchat.png";
+import CyclingRouter from "../../public/7JKD2fV.png";
+import IdealShere from "../../public/idealshere.webp";
+import Nuxtchat from "../../public/nuxtchat.png";
 
 const ReactSlickDemo = () => {
   const images = [

@@ -1,10 +1,14 @@
 import Styles from "./Tech.module.scss";
-import React from "react";
+import React, { useState } from "react";
 import SkillBadgeGroup from "./SkillBadgeGroup";
-import { Skill } from "../../../types/tech";
+
+type Skill = {
+  name: string;
+  group: "front" | "back" | "other";
+};
 
 const Tech = () => {
-  const skills: Skill[] = [
+  const [skills, setSkills] = useState<Skill[]>([
     { name: "Next.js", group: "front" },
     { name: "React", group: "front" },
     { name: "Vue.js", group: "front" },
@@ -18,7 +22,7 @@ const Tech = () => {
     { name: "AWS", group: "front" },
     { name: "GCP", group: "front" },
     { name: "Linux", group: "front" },
-  ];
+  ]);
   return (
     <>
       <h1 className={Styles.title}>Tech</h1>

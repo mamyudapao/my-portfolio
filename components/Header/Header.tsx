@@ -3,7 +3,7 @@ import { Button } from "@chakra-ui/react";
 import Image from "next/image";
 import Link from "next/link";
 import Styles from "./Header.module.scss";
-import logo from "../../../public/logo3.png";
+import logo from "../../public/logo3.png";
 
 const Header = () => (
   <div className={Styles.headerWrapper}>
