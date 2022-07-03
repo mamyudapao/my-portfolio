@@ -59,7 +59,7 @@ const ReactSlickDemo = () => {
 };
 
 const Works = () => (
-  <div className={Styles.worksWrapper}>
+  <div className={Styles.worksWrapper} id="works">
     <h2 className={Styles.title}>Woks</h2>
     <ReactSlickDemo />
   </div>
