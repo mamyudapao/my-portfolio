@@ -24,7 +24,7 @@ const Tech = () => {
     { name: "Linux", group: "front" },
   ]);
   return (
-    <>
+    <div id="tech">
       <h1 className={Styles.title}>Tech</h1>
       <div className={Styles.techWrapper}>
         <div className={Styles.left}>
@@ -39,7 +39,7 @@ const Tech = () => {
           <SkillBadgeGroup skills={skills} />
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
