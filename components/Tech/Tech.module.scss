@@ -1,0 +1,66 @@
+.skillBadge {
+    width: fit-content;
+    min-width: 220px;
+    height: 80px;
+    margin: 0 15px;
+    border-radius: 50px;
+    background-color: aqua;
+}
+
+.skillBadgeGroupCenter {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.skillBadgeGroup {
+    display: flex;
+    margin-bottom: 20px;
+    margin-left: 50px;
+}
+
+.badgeTitle {
+    margin: 0 30px;
+    white-space: nowrap;
+    position: relative;
+    display: block;
+    text-align: center;
+    top: 20%;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 60px;
+    margin-bottom: 25vh;
+}
+
+.techWrapper {
+    display: flex;
+    height: 60vh;
+}
+
+.left {
+    width: 40%;
+    text-align: center;
+    h2 {
+        font-size: 3em;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    p {
+        font-size: 1.5em;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+}
+
+.right {
+    width: 60%;
+    overflow-x: scroll;
+}
+
+.right::-webkit-scrollbar {
+    display: none;
+}

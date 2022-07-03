@@ -1,10 +1,8 @@
 import "../styles/globals.css";
 import type { AppProps } from "next/app";
 import { ChakraProvider } from "@chakra-ui/react";
-import Header from "./components/Header/Header";
-import About from "./components/About/About";
-import Works from "./components/Works/Works";
 import Head from "next/head";
+import Header from "../components/Header/Header";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -17,8 +15,6 @@ function MyApp({ Component, pageProps }: AppProps) {
       </Head>
       <ChakraProvider>
         <Header></Header>
-        <About></About>
-        <Works></Works>
         <Component {...pageProps} />
       </ChakraProvider>
     </>
